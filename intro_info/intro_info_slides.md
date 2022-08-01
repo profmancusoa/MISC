@@ -11,6 +11,7 @@ class: 'text-center'
 lineNumbers: false
 aspectRatio: '16_/9'
 routerMode: 'hash'
+download: true
 version: '1.0.1'
 ---  
 
