@@ -6,4 +6,4 @@ Repository per presentazioni generali per ITT Agnelli
 
 ## Miscellaneaus
 
-- [Introduzione indirizzo Informatica](https://mancusoa74.github.io/MISC/intro_info)
+- [Introduzione indirizzo Informatica](https://profmancusoa.github.io/MISC/intro_info)
