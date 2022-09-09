@@ -204,16 +204,6 @@ Attività
   - Realizzazione di siti web e blog
 
 ---
-
-# ITT Informatica
-
-https://ittagnelli.github.io/ats/
-
-<center>
-<img src="/media/ittinfo15.png" />
-</center>
-
----
 layout: image-left
 image: /media/ittinfo16.png
 ---
@@ -231,6 +221,16 @@ Agnelli Tech Shop
 
 # ITT Informatica
 
+https://ittagnelli.github.io/ats/
+
+<center>
+<img src="/media/ittinfo15.png" />
+</center>
+
+---
+
+# ITT Informatica
+
 Agnelli Tech Shop
 
 <center>
@@ -238,11 +238,21 @@ Agnelli Tech Shop
 </center>
 
 ---
+
+# ITT Informatica2
+
+PCTO
+
+<center>
+<img src="/media/ittinfo19.png" width="750"/>
+</center>
+
+---
 layout: image-left
 image: /media/ittinfo18.png
 ---
 
-# ITT Informatica
+# ITT Informatica1
 
 PCTO
 
@@ -250,13 +260,3 @@ PCTO
 - 6 settimane di attività **lavorativa**
 - In questo PCTO, **6 studenti della 3 Informatica**, sono stati integrati nel team di Quality Assurance di Alba Robot.
 - Gli studenti hanno così preso parte, a tutti gli effetti, al ciclo di sviluppo del prodotto e si sono focalizzati sulla parte di testing e qualità.
-
----
-
-# ITT Informatica
-
-PCTO
-
-<center>
-<img src="/media/ittinfo19.png" width="750"/>
-</center>
