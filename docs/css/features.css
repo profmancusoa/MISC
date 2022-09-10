@@ -86,15 +86,15 @@
 }
 
 a:link,
-a:visited {
+a:visited,
+a:active {
   color: white;
   text-decoration: none;
 }
 
-a:hover,
-a:active {
-  background-color: rgba(255, 255, 255, 0.2);
-  color: white;
+a:hover {
+  color: yellow;
+  text-decoration: none;
 }
 
 .titolo-avatar {
