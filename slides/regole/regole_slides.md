@@ -15,7 +15,7 @@ routerMode: "hash"
 download: true
 materia: MISC
 as: 2022/2023
-version: "1.0.0"
+version: "1.0.1"
 ---
 
 # ITT Informatica - prof. Mancuso
@@ -96,7 +96,7 @@ Compiti ed esercitazioni
 
 Puntualità
 
-- Essere puntuali è segni di precisione, di mente logica e di rispetto per il prossimo
+- Essere puntuali è segno di precisione, di mente logica e di rispetto per il prossimo
 - **Io sarò sempre puntuale nei vostri confronti**
 
 <br>
@@ -113,7 +113,7 @@ Rispetto ed onestà
 - Solide relazioni si basano sul rispetto reciproco e sull'onestà
 - I compiti li svolgo io di mio pugno perchè sono utili per me e non per fare contento il professore
 - La verifica la svolgo io di mio pugno senza copiare perchè mi permette di mettermi alla prova e crescere
-- **Io sarò sempre onesto e trasparente nei vostri confronti anche quando**
+- **Io sarò sempre onesto e trasparente nei vostri confronti**
 
 <br>
 <br>
@@ -133,6 +133,22 @@ Feedback reciproco
 <br>
 <img src="/media/regole07.png" width="350" style="margin: auto;">
 
+
+---
+
+# Camminiamo insieme
+
+Stabiliamo un dialogo
+
+- Alla base di un buon rapporto c'è il dialogo
+- Questo è vero anche tra studenti ed insegnante
+- Io sarò aperto al 100% al dialogo con voi
+- Mi vuoi dire una cosa pubblica? In classe e in laboratorio  avremo 1000 opportunità
+- Mi vuoi dire una cosa privata? Ci vediamo dasoli in classse, mi scrivi un mail, mi mandi un whatsapp, un pizzino o qualsiasi altro metodo preferisci 
+
+<br>
+<img src="/media/regole09.png" width="250" style="margin: auto;">
+
 ---
 
 # Camminiamo insieme
@@ -145,22 +161,6 @@ Divertiamoci insieme
 <br>
 <br>
 <img src="/media/regole08.png" width="250" style="margin: auto;">
-
-
----
-
-# Camminiamo insieme
-
-Stabiliamo un dialogo
-
-- Alla base di un buon rapporto c'è il dialogo
-- Questo è vero anche tra studenti ed insegnante
-- Io sarò aperto al 100% al dialogo con voi
-- Mi vuoi dire una cosa pubblica? In classe e in laboratorio  avremo 1000 opportunità
-- Mi vuoi dir euna cosa privata? Ci vediamo dasoli in classse, mi scrivi un mail, mi mandi un whatsapp, un foglietto o qualsiasi altro metodo preferisci 
-
-<br>
-<img src="/media/regole09.png" width="250" style="margin: auto;">
 
 
 ---
