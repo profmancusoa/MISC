@@ -15,7 +15,7 @@ routerMode: "hash"
 download: true
 materia: MISC
 as: 2022/2023
-version: "1.0.1"
+version: "1.0.2"
 ---
 
 # ITT Informatica - prof. Mancuso
@@ -28,6 +28,10 @@ Camminiamo insieme
   </span>
 </div>
 
+
+---
+
+<img src="/media/regole00w.jpg" style="margin: auto; width:80%;">
 
 
 ---
@@ -148,6 +152,54 @@ Stabiliamo un dialogo
 
 <br>
 <img src="/media/regole09.png" width="250" style="margin: auto;">
+
+---
+
+# Camminiamo insieme
+
+Valutazione
+
+- La valutazione è un processo più ampio dell'assegnazione di un voto in conseguenza di una verifica o interrogazione
+- La valutazione avviene in maniera continuativa
+- Durante le lezioni faccio sempre domande per verificare se avete capito i concetti espressi
+- Durante le lezioni faccio sempre domande sulle lezioni precedenti per verificare se siete al passo
+- Durante le esercitazioni faccio domande sulle lezioni precedenti e anche sui concetti espressi da altre materie (dopotutto l'informatica è una sola)
+- Quando assegno un compito esso va svolto
+- Io correggo sempre i vostri compiti e vi fornisco un feedback
+  
+---
+
+# Camminiamo insieme
+
+Valutazione
+
+**Perchè tutto questo???**
+- Per fornirvi costantemente un feedback sull'andamento del percorso che staimo facendo insieme
+- In ogni situazione posso assegnare un voto numerico e non:
+  - Voto numerico da 2 a 10 sul registro che fa media
+  - `+` o `-`  sul registro ad indicare l'apprezzamento o meno di una determinata situazione
+
+**Ma cosa sono i + e -**
+- Sono degli indicatori che qualcosa va particolarmente bene e che va corretta
+- `Ogni 3 -` assegno un voto insufficiente sul registro che fa media
+- `I +` spesso diventano un 8 sul registro che fa media oppure mi tornano in mente al momento della correzione o in sede di scrutinio
+
+---
+
+# Camminiamo insieme
+
+Valutazione
+
+**Ma quindi il voto e i + e - sono l'unica cosa che conta?**
+
+- Assolutamente no!!!
+- Io vi propongo un percorso di apprendimento e divertimento dove l'obiettivo principale è apprendere sia la materia sia un modo di essere ed un attegiamento mentale
+- Il voto è solo l'espressione concisa e obbligatoria per legge
+
+<br>
+<div style="background:green; color:yellow; padding: 2rem; font-size: 2rem;">
+La mia valutazione è UMANA e tiene conto del vostro modo di essere e di comportarvi
+</div>
 
 ---
 
