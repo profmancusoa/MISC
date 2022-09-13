@@ -2,7 +2,8 @@
 theme: default
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: https://source.unsplash.com/collection/9Eq26n8TeCM/1920x1080
+#background: https://source.unsplash.com/collection/9Eq26n8TeCM/1920x1080
+background: /assets/regole01.jpg
 # apply any windi css classes to the current slide
 class: "text-center"
 # https://sli.dev/custom/highlighters.html
