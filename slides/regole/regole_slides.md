@@ -15,7 +15,7 @@ routerMode: "hash"
 download: true
 materia: MISC
 as: 2022/2023
-version: "1.0.2"
+version: "1.0.3"
 ---
 
 # ITT Informatica - prof. Mancuso
@@ -183,6 +183,14 @@ Valutazione
 - Sono degli indicatori che qualcosa va particolarmente bene e che va corretta
 - `Ogni 3 -` assegno un voto insufficiente sul registro che fa media
 - `I +` spesso diventano un 8 sul registro che fa media oppure mi tornano in mente al momento della correzione o in sede di scrutinio
+
+---
+
+# Camminiamo insieme
+
+Valutazione
+
+<img src="/media/regole10.jpg" width="400" style="position:relative;top: -50px;left:200px;">
 
 ---
 
