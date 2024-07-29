@@ -14,8 +14,8 @@ aspectRatio: "16_/9"
 routerMode: "hash"
 download: true
 materia: MISC
-as: 2022/2023
-version: "1.0.3"
+as: 2024/2025
+version: "1.1.0"
 ---
 
 # ITT Informatica - prof. Mancuso
@@ -33,17 +33,22 @@ Camminiamo insieme
 
 <img src="/media/regole00w.jpg" style="margin: auto; width:80%;">
 
+---
+
+# Camminiamo insieme
+
+&nbsp;
+
+
+<img src="/media/regole11.png" style="margin: auto; margin-top:-40px" width=450>
 
 ---
 
 # Regolamento
 
-<br><br>
-
-<div style="background:green; color: yellow; padding: 2rem; font-size: 3rem; line-height: 4rem;">
-In tutte le mie lezioni e laboratori vige il regolamento d'istituto che ogni studente è tenuto a conoscere e rispettare!!!
-</div>
-  
+<Banner padding=50px mt=50px>
+<span style="font-size:30px;">In tutte le mie lezioni e laboratori vige il regolamento d'istituto che ogni studente è tenuto a conoscere e rispettare!!!</span>
+</Banner>  
 
 ---
 
@@ -71,14 +76,15 @@ Ricerca dell'equilibrio
 
 Cellulare
 
-- Il cellulare NON si usa durante le lezioni e le esercitazioni se non richiesto dal docente
-- Il cellulare rimane spento nello zaino
+- Il cellulare `NON` si usa durante le lezioni e le esercitazioni se non esplicitamente richiesto dal docente
+- Il cellulare rimane `spento` o in `modalità aereo` 
+- Il cellulare si ripone nell'apposita tasca, o se assente, nel proprio zaino o equivalente
 - In caso contrario il cellulare viene sequestrato e portato in presidenza
-- **Io non userò mai il cellulare durante una lezione per scopi personali**
+- `Io non userò mai il cellulare durante una lezione per scopi personali`
 
 <br>
 <br>
-<img src="/media/regole03.png" width="200" style="margin: auto;">
+<img src="/media/regole03.png" width="180" style="margin: auto;">
 
 ---
 
@@ -86,9 +92,9 @@ Cellulare
 
 Compiti ed esercitazioni
 
-- I compiti assegnati vanno SEMPRE svolti
-- I compiti sono assegnati per permettervi di migliorarvi e di andare avanti nel vostro percorso di apprendimento
-- **Io correggerò sempre i vostri compiti e vi fornirò un feedback costruttivo**
+- I compiti assegnati vanno `SEMPRE` svolti
+- I compiti sono assegnati per permettere di migliorarvi e di andare avanti nel vostro percorso di apprendimento
+- `Io correggerò sempre i vostri compiti e vi fornirò un feedback costruttivo`
 
 <br>
 <br>
@@ -101,11 +107,12 @@ Compiti ed esercitazioni
 Puntualità
 
 - Essere puntuali è segno di precisione, di mente logica e di rispetto per il prossimo
-- **Io sarò sempre puntuale nei vostri confronti**
+- Si entra in classe un attimo prima dell'inizio della lezione o comunque del docente
+- La puntualità è necessaria sia ad inizio lezione che dopo l'intervallo
+- `Io sarò sempre puntuale nei vostri confronti (lezioni, compiti, verifiche, progetti, PCTO, ....)`
 
 <br>
-<br>
-<img src="/media/regole05.png" width="300" style="margin: auto;">
+<img src="/media/regole05.png" width="250" style="margin: auto;">
 
 
 ---
@@ -117,11 +124,30 @@ Rispetto ed onestà
 - Solide relazioni si basano sul rispetto reciproco e sull'onestà
 - I compiti li svolgo io di mio pugno perchè sono utili per me e non per fare contento il professore
 - La verifica la svolgo io di mio pugno senza copiare perchè mi permette di mettermi alla prova e crescere
-- **Io sarò sempre onesto e trasparente nei vostri confronti**
+- `Io sarò sempre onesto e trasparente nei vostri confronti`
 
 <br>
 <br>
 <img src="/media/regole06.png" width="250" style="margin: auto;">
+
+---
+
+# Camminiamo insieme
+
+ChatGPT
+
+- `ChatGPT` ed affini sono strumenti sofisticati, utili e formidabili
+- Come tutti gli strumenti,  ChatGPT non è *buona* o *cattiva* di per se, ma lo diventano in funzione dell'uso che ne facciamo
+- Io `INCORAGGIO` l'uso consapevole,sensato e `ATTIVO` di ChatGPT come sturmento di apprendimento, di perfezionamento e di accrescimento del sapere personale
+  - Gli parlo, mi faccio spiegare un concetto che non ho capito bene a lezione
+  - Esploro nuovi concetti che non ho visto a scuola
+  - Studio e apprendo da chatGPT
+  - ...
+- Io `SCORAGGIO` l'uso `PASSIVO` di ChatGPT
+  - Mi faccio fare il compito in 2 minuti così ho finito tanto il prof. non se ne accorge
+  - Copio beceramente quello che mi dice ChatGPT senza usare il mio cervello e il senso critico
+  - ...
+
 
 ---
 
