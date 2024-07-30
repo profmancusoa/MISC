@@ -148,6 +148,18 @@ ChatGPT
   - Copio beceramente quello che mi dice ChatGPT senza usare il mio cervello e il senso critico
   - ...
 
+---
+
+# Camminiamo insieme
+
+Feedback reciproco
+
+
+<img src="/media/regole12.png" width="650" style="margin: auto;position: relative;left:-150px;top:0px;">
+
+
+<img src="/media/regole11.jpg" width="350" style="margin: auto;position: relative;left:350px;top:-250px;">
+
 
 ---
 
@@ -157,11 +169,12 @@ Feedback reciproco
 
 - Scambairsi un `feedback` costruttivo è sempre utile
 - Io ho bisogno del vostro feedback per conoscervi meglio e per offrirvi la miglior qualità di cui sono capace
-- **Io vi fornirò costantemente feedback per permettervi di correggere la traiettoria e ottenere ottimi risultati**
+- `Io vi fornirò costantemente feedback per permettervi di correggere la traiettoria e ottenere ottimi risultati`
 
 <br>
 <br>
 <img src="/media/regole07.png" width="350" style="margin: auto;">
+
 
 
 ---
@@ -174,10 +187,34 @@ Stabiliamo un dialogo
 - Questo è vero anche tra studenti ed insegnante
 - Io sarò aperto al 100% al dialogo con voi
 - Mi vuoi dire una cosa pubblica? In classe e in laboratorio  avremo 1000 opportunità
-- Mi vuoi dire una cosa privata? Ci vediamo dasoli in classse, mi scrivi un mail, mi mandi un whatsapp, un pizzino o qualsiasi altro metodo preferisci 
+- Mi vuoi dire una cosa privata? Ci vediamo da soli in classse, mi scrivi un mail, mi mandi un whatsapp, un pizzino o qualsiasi altro metodo che preferisci 
 
 <br>
 <img src="/media/regole09.png" width="250" style="margin: auto;">
+
+---
+
+# Camminiamo insieme
+
+Patente vs Pilota F1
+
+<img src="/media/regole15.png" width="350" style="margin: auto;position:relative;left:-250px;top:80px;">
+
+<img src="/media/regole16.png" width="350" style="margin: auto;position:relative;left:200px;top:-120px;">
+
+
+---
+
+# Camminiamo insieme
+
+Informatico vs Diploma in Informatica
+
+<img src="/media/regole17.png" width="450" style="margin: auto;position:relative;left:-250px;top:50px;">
+
+<img src="/media/regole18.png" width="400" style="margin: auto;position:relative;left:200px;top:-250px;">
+
+
+
 
 ---
 
@@ -212,11 +249,51 @@ Valutazione
 
 ---
 
-# Camminiamo insieme
+# Gamification
 
-Valutazione
+Lambs Of Fame (https://lambsoffame.mancusoa.it)
 
-<img src="/media/regole10.jpg" width="400" style="position:relative;top: -50px;left:200px;">
+<div class="grid grid-cols-2 gap-4">
+<div>
+
+- Dall'anno scolastico 2024 introduco un processo di &nbsp; `gamification` con l'obiettivo di motivare tutti gli studenti a dare il meglio di se
+- L'obiettivo è ampliare le opportunità di valutazione nel corso dell'anno 
+- Quindi come in ogni gioco che si rispetti, ci sarà una **Leaderboard** suddivisa per materia ed una complessiva
+
+</div>
+<div>
+<img src="/media/regole13.png" width="400" style="margin: auto;">
+
+</div>
+</div>
+
+---
+
+# Gamification
+
+Lambs Of Fame
+
+- Durante il corso dell'anno assegnerò dei punteggi in svariate situazioni
+  - Ti faccio una domanda e rispondi correttamente: `+1000 punti`
+  - Partecipi all'Openday e presenti un progetto: `+3000 punti`
+  - Hai svolto il compito assegnato in modo serio e puntuale: `+1000 punti`
+  - Sviluppi un progetto extra-didattico: `+5000 punti`
+  - ....: `+X punti`
+- In questo modo lo studente non è valutato solo per le verifiche ufficiali
+- Lo studente ha l'opportunità di acquisire punti in diversi ambiti sfruttando le sue capacità e competenze
+- A fine quadrimestre viene assegnato un voto che fa media (rimpiazza una verifica)
+- Il voto viene calcolato come discostamento percentuale dal valore medio
+- Quindi gli studenti che totalizzano un pujnteggio complessivo (per materia) pari alla media ricevono un 6
+- Gli studenti che totalizzano un voto che è il 35% superiore alla media ricevono un 8
+- Gli studenti che totalizzano un punteggio che è il 35% inferiore alla media ricevono un 4
+
+
+
+---
+
+&nbsp;
+
+<img src="/media/regole10.jpg" width="430" style="position:relative;top: -80px;left:200px;">
 
 ---
 
@@ -224,16 +301,19 @@ Valutazione
 
 Valutazione
 
-**Ma quindi il voto e i + e - sono l'unica cosa che conta?**
+**Ma quindi il voto e i + e - e la leaderboard sono l'unica cosa che conta?**
 
 - Assolutamente no!!!
-- Io vi propongo un percorso di apprendimento e divertimento dove l'obiettivo principale è apprendere sia la materia sia un modo di essere ed un attegiamento mentale
+- Io vi propongo un percorso di apprendimento e divertimento dove l'obiettivo principale è apprendere sia la materia sia un modo di essere ed un attegiamento mentale (essere informativi vs avere il diploma in informatica)
 - Il voto è solo l'espressione concisa e obbligatoria per legge
 
 <br>
-<div style="background:green; color:yellow; padding: 2rem; font-size: 2rem;">
-La mia valutazione è UMANA e tiene conto del vostro modo di essere e di comportarvi
-</div>
+
+<Banner padding=35px>
+<span style="font-size:30px;">
+La mia valutazione è UMANA e tiene conto del vostro modo di essere e di comportarvi come persone e come giovani informatici
+</span>
+</Banner>
 
 ---
 
@@ -248,6 +328,15 @@ Divertiamoci insieme
 <br>
 <img src="/media/regole08.png" width="250" style="margin: auto;">
 
+---
+
+# Slides
+
+&nbsp;
+
+- Tutto il materiale messo a disposizione dal docente è disponibile qui [https://slides.mancusoa.it](https://slides.mancusoa.it)
+
+<img src="/media/regole14.png" width="650" style="margin: auto;">
 
 ---
 
