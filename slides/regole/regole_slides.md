@@ -251,6 +251,16 @@ Valutazione
 
 # Gamification
 
+&nbsp;
+
+<img src="/media/regole19.png" width="400" style="margin: auto;">
+
+
+
+---
+
+# Gamification
+
 Lambs Of Fame (https://lambsoffame.mancusoa.it)
 
 <div class="grid grid-cols-2 gap-4">
