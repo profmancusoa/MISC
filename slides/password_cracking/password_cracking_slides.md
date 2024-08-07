@@ -378,6 +378,7 @@ pwgen e keepassx
 - Gli hacker creano una tabella di password comuni e dei relativi hash corrispondenti
 - Quindi confrontano gli hash della password di destinazione con la tabella per trovare una corrispondenza.
 - In questo modo, in alcuni scenari, si può decifrare una password molto più velocemente rispetto ad un attacco brute force
+- Ci sono [rainbowtable](https://freerainbowtables.com) da oltre 1000 GB 
  
 <span style="font-family: 'Creepster', cursive;letter-spacing:5px;color:green; font-weight: 500; font-style:italic;font-size:1.5rem;">Contromisure:</span>
 
@@ -389,7 +390,75 @@ pwgen e keepassx
 
 # Password Cracking
 
-Aggiungere spiegazione salt con openssl ed esempi
+<br>
+
+```bash
+Start Point         | End Point
+--------------------------------
+abc                 | CLticu7pz8PPQGtfIZw731
+bcd                 | hsPCcJGhVOjLN1vjzj0m80
+...
+xyz                 | V4OAyKi4r.e9FcRAyXdyF/
+
+```
+
+<br>
+
+- In questo modo anzichè calcolare l'hash per ogni combinazione (brute force) cerco l'hash che voglio cracckare nella tabelle
+- Se trovo una corrispondenza nella colonna di sinistra leggo la password in chiaro
+
+
+---
+
+# Password Cracking
+
+- Calcoliamo l'hash MD5 di una passowrd
+
+```bash
+$ openssl passwd -1 -salt aaaa abc
+$1$aaaa$CLticu7pz8PPQGtfIZw731
+
+$openssl passwd -1 -salt aaaa bcd
+$1$aaaa$hsPCcJGhVOjLN1vjzj0m80
+
+$openssl passwd -1 -salt aaaa xyz
+$1$aaaa$V4OAyKi4r.e9FcRAyXdyF/
+```
+<br>
+
+- Il "salt" è un valore casuale che viene aggiunto a una password prima che venga hashata. 
+- I suoi scopi principali sono:
+  - Prevenzione degli Attacchi con Rainbow Table
+  - Diversificazione degli Hash
+  - Prevenzione degli Attacchi su Password Riutilizzate
+
+
+---
+
+# Password Cracking
+
+- Infatti se ricalcoliamo l'hash md5 con un salt diverso otteniamo risultati completamente diversi
+
+```bash
+$ openssl passwd -1 -salt aaab abc
+$1$aaab$kYi6JKZzw7c.ExaKTjviv1
+
+$ openssl passwd -1 -salt aaab bcd
+$1$aaab$GaFNveL0I6uMiWCdiiTuI0
+
+$ openssl passwd -1 -salt aaab xyz
+$1$aaab$ZputqBz/cOvuwxEsj5noG1
+```
+
+<br>
+
+- Quindi una tabella di hash è calcolata senza salt o per un solo salt
+- Se quindi il nostro sistema esegui l'hashing delle password con un salt casuale
+- Sarà necessario calcolare N hashtable 
+- Linux usa un salt da 16 caratteri 
+- Quindi è necessario calcolare 62^16 hashtable
+- Essendo ciò impraticabile rende l'attacco rainbow table inefficace e viene neutralizzato
+
 
 ---
 
@@ -412,8 +481,67 @@ Aggiungere spiegazione salt con openssl ed esempi
 
 # Password Cracking
 
-aggiungere slide su autenticazione a due fattori
+2FA
 
+<Banner padding=20px >
+La 2FA, o autenticazione a due fattori (Two-Factor Authentication), è un metodo di sicurezza che richiede due forme di verifica per confermare l'identità di un utente
+<br><br>Questo approccio aggiunge un livello di protezione supplementare rispetto all'uso di una sola password
+</Banner>
+
+<br>
+
+La 2FA combina due di questi tre fattori:
+- **Qualcosa che sai**: Una password o un PIN.
+- **Qualcosa che hai**: Un dispositivo fisico come uno smartphone, un token hardware o una smart card.
+- **Qualcosa che sei**: Un fattore biometrico come un'impronta digitale, il riconoscimento facciale o la scansione dell'iride.
+
+
+<img src="/media/pwd_33.png" width="250" style="margin:auto;position:relative; left: 0px; top: -30px;">
+
+---
+
+# Password Cracking
+
+2FA
+
+**Come Funziona la 2FA**
+
+Ecco un esempio comune di come funziona la 2FA:
+
+- **Inserimento della Password:** L'utente inserisce la propria password per accedere a un servizio online.
+- **Secondo Fattore di Autenticazione:** Dopo aver inserito la password corretta, viene richiesto di fornire un secondo fattore di autenticazione. Questo può essere un codice generato da un'app di autenticazione sullo smartphone, un codice inviato via SMS, un token generato da un dispositivo hardware, o una scansione biometrica.
+
+---
+
+# Password Cracking
+
+2FA
+
+**Tipi Comuni di 2FA**
+
+- **App di Autenticazione:** App come Google Authenticator, Authy o Microsoft Authenticator generano codici temporanei a intervalli regolari.
+- **Codici via SMS:** Un codice di verifica viene inviato al numero di telefono registrato dell'utente.
+- **Token Hardware:** Dispositivi fisici come YubiKey generano codici di accesso unici.
+- **Autenticazione Biomentrica:** L'uso di impronte digitali, riconoscimento facciale o scansione dell'iride per verificare l'identità dell'utente.
+
+---
+
+# Password Cracking
+
+2FA
+
+**Vantaggi della 2FA**
+
+- **Maggior Sicurezza:** Anche se la password viene compromessa, l'attaccante non può accedere all'account senza il secondo fattore di autenticazione.
+- **Protezione contro Phishing e Keylogger:** Gli attacchi che riescono a ottenere le password non sono sufficienti da soli per accedere agli account protetti da 2FA.
+
+
+**Conclusione**
+
+<Banner padding=25px>
+La 2FA è una misura di sicurezza semplice ma molto efficace che protegge gli account online da accessi non autorizzati. 
+<br>Implementando la 2FA, gli utenti possono proteggere meglio i propri dati personali e professionali, riducendo il rischio di compromissioni di sicurezza.
+</Banner>
 ---
 
 # Password Cracking
@@ -469,7 +597,6 @@ shoulder Surfing
 
 <img src="/media/pwd_32.png" width="400" style="margin:auto;position:relative; left: 0px; top: 0px;">
 
-
 ---
 
 # Password Cracking
@@ -484,6 +611,66 @@ shoulder Surfing
 1. Utilizzare un software antivirus aggiornati
 2. Evitare di fare clic su collegamenti sospetti e di scaricare software da fonti non attendibili (*nulla è gratis*)
 3. Utilizzare un gestore di password basato su hardware per archiviare le password.
+
+---
+
+# Password Cracking
+
+Key Logger
+
+<Banner padding=25px>
+Un keylogger è un tipo di software o hardware che registra le sequenze di tasti premuti su una tastiera, spesso senza che l'utente sia a conoscenza di questa attività. <br><br>I keylogger sono strumenti potenti che possono essere utilizzati sia per scopi legittimi che per attività malevole.
+</Banner>
+
+---
+
+# Password Cracking
+
+Key Logger
+
+**Tipi di Keylogger**
+
+- **Keylogger Software:** Programmi che registrano i tasti premuti e memorizzano queste informazioni in un file di log, che può essere successivamente recuperato dall'attaccante. Possono essere installati su un computer tramite malware, download di software infetti o vulnerabilità di sicurezza.
+- **Keylogger Hardware:** Dispositivi fisici che si collegano tra la tastiera e il computer, registrando le sequenze di tasti premuti. Questi dispositivi possono essere difficili da rilevare senza un'ispezione fisica del computer.
+
+<img src="/media/pwd_34.png" width="300" style="margin:auto;position:relative; left: -300px; top: 20px;">
+
+<img src="/media/pwd_35.png" width="300" style="margin:auto;position:relative; left: 300px; top: -180px;">
+
+---
+
+# Password Cracking
+
+Key Logger
+
+**Scopi e Utilizzi**
+
+**Utilizzi Legittimi**
+
+- **Monitoraggio dei Dipendenti:** Alcuni datori di lavoro utilizzano keylogger per monitorare l'uso delle tastiere dei dipendenti, con l'obiettivo di garantire la produttività o per motivi di sicurezza.
+- **Controllo Parentale:** I genitori possono utilizzare keylogger per monitorare le attività online dei propri figli e proteggere loro da contenuti inappropriati.
+
+**Utilizzi Malevoli**
+
+- **Furto di Identità:** Gli attaccanti utilizzano keylogger per rubare informazioni personali come credenziali di accesso, numeri di carte di credito, e altre informazioni sensibili.
+- **Spionaggio:** Keylogger possono essere utilizzati per spiare utenti specifici, raccogliendo informazioni sensibili o segreti aziendali.
+
+---
+
+# Password Cracking
+
+Key Logger
+
+**Conclusione**
+
+<Banner padding=25px>
+I keylogger possono rappresentare una grave minaccia alla sicurezza e alla privacy. <br>È importante essere consapevoli dei rischi associati e adottare misure preventive per proteggere le informazioni sensibili. <br>Utilizzare software di sicurezza aggiornato e monitorare attentamente l'attività del sistema sono passi fondamentali per proteggersi da questa minaccia.
+</Banner>
+
+<Banner padding=20px mt=20px>
+Ricorda: NULLA E' GRATUITO!!!<br>
+<br>Nemmeno il crack del gioco o dell'applicazione XYZ
+</Banner>
 
 ---
 
@@ -538,149 +725,74 @@ shoulder Surfing
 
 # Password Cracking
 
-10 tecniche usate dai Cracker e strategie difensive
-10 tecniche usate dai Cracker e strategie difensive
+&nbsp;
 
-- erfds 
-- erfds
+**CONCLUSIONE**
 
----
-
-# Password Cracking
-
-10 tecniche usate dai Cracker e strategie difensive
-
-- erfds 
-- erfds
-
----
-
-
-- erfds 
-- erfds
+- Le password sono ancora oggi elemento fondamentale per la protezione dell'accesso di risorse digitali e non
+- Conoscere le principlai tecniche di cracking ci aiuta a comprendere che la scelta e la gestione di una password non è una cosa da prendere a "cuor leggero"
+- Pertanto scegliamo password lunghe e complesse
+- Utilizziamo un password manager `se tu le ricordi, io le indovino!!!`
+- Dove possibile abilitiamo l'autenticazione 2FA (o MFA)
+- Tenere la propria password privata e non condividerla con nessuno
+- Non usare la stessa password per più account
+- Aggiorna la passowrd almeno 2 volte all'anno
 
 ---
 
 # Password Cracking
 
-10 tecniche usate dai Cracker e strategie difensive
+Esercitazione 01
 
-- erfds 
-- erfds
+fds
 
----
 
-# Password Cracking
-
-10 tecniche usate dai Cracker e strategie difensive
-
-- erfds 
-- erfds
 
 ---
 
 # Password Cracking
 
-10 tecniche usate dai Cracker e strategie difensive
+Esercitazione 01
+
+
 
 - erfds 
 - erfds
 
----
-10 tecniche usate dai Cracker e strategie difensive
-
-- erfds 
-- erfds
 
 ---
 
 # Password Cracking
 
-10 tecniche usate dai Cracker e strategie difensive
+Esercitazione 01
+
+
 
 - erfds 
 - erfds
 
----
-
----
-
-# Password Cracking
-
-10 tecniche usate dai Cracker e strategie difensive
-
-- erfds 
-- erfds
 
 ---
 
 # Password Cracking
 
-10 tecniche usate dai Cracker e strategie difensive
+Esercitazione 01
+
+
 
 - erfds 
 - erfds
+
 
 ---
 
 # Password Cracking
 
-10 tecniche usate dai Cracker e strategie difensive
+Esercitazione 01
+
+
 
 - erfds 
 - erfds
 
----
-
-# Password Cracking
-
-10 tecniche usate dai Cracker e strategie difensive
-
-- erfds 
-- erfds
-
----
-
-# Password Cracking
-
-10 tecniche usate dai Cracker e strategie difensive
-
-- erfds 
-- erfds
-
----
-
-# Password Cracking
-
-10 tecniche usate dai Cracker e strategie difensive
-
-- erfds 
-- erfds
-
----
-
-# Password Cracking
-
-10 tecniche usate dai Cracker e strategie difensive
-
-- erfds 
-- erfds
-
----
-
-# Password Cracking
-
-10 tecniche usate dai Cracker e strategie difensive
-
-- erfds 
-- erfds
-
----
-
-# Password Cracking
-
-10 tecniche usate dai Cracker e strategie difensive
-
-- erfds 
-- erfds
-
+s
