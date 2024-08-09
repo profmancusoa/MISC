@@ -744,20 +744,17 @@ Ricorda: NULLA E' GRATUITO!!!<br>
 
 Esercitazione 01
 
-fds
+- Ci sono molti strumenti a disposizione per il cracking delle password
+- Come sempre lo strumento in se non è malevolo, ma può esserlo l'uso che se ne fa
+- Un White Hat Hacker usa questi strumenti per verificare se le password di un sistema sono sicure e per scoprire eventuali criticità
+- Un Black Hat Cracker usa questi strumenti per un vantaggio personale
 
-
-
----
-
-# Password Cracking
-
-Esercitazione 01
-
-
-
-- erfds 
-- erfds
+- Tra i più utilizzati in ambito open troviamo:
+  - Hashcat
+  - JtR (John The Ripper)
+  - Hydra
+  - AirCrack-NG
+  - ...
 
 
 ---
@@ -766,11 +763,30 @@ Esercitazione 01
 
 Esercitazione 01
 
+- Questi tool sono molto potenti e di conseguenza anche complessi da utilizzare (almeno nelle loro forme più avanzate)
+- Ci sono oltre 200 algoritmi di hashing
+- Ci sono vari tipi di attacchi 
+- Supportano CPU e GPU per "macinare" più hash possibili al secondo
+- Possono essere distribuiti in cluster
+- Tuttavia con un pò di pazienza si possono ottenere ottimi risultati
 
+---
 
-- erfds 
-- erfds
+# Password Cracking
 
+Esercitazione 01
+
+- Nell'esercitazione useremo il famoso `John The Ripper` [official website](https://www.openwall.com/john/)
+
+<br>
+
+> John the Ripper è un software open-source progettato per effettuare il cracking delle password. È uno strumento molto utilizzato dagli amministratori di sistema e dai professionisti della sicurezza informatica per testare la robustezza delle password all'interno di un sistema. L'obiettivo principale di John the Ripper è quello di individuare password deboli, facili da indovinare o vulnerabili a determinati tipi di attacchi.
+
+<br>
+
+<Banner padding=30px mt=20px>
+Essendo un tool potente, è ampiamente utilizzato sia in ambito legale per test di sicurezza (penetration testing), sia in contesti meno legittimi. È importante ricordare che l'uso di John the Ripper, o di altri strumenti simili, senza autorizzazione è illegale e può comportare conseguenze legali.
+</Banner>
 
 ---
 
@@ -779,9 +795,50 @@ Esercitazione 01
 Esercitazione 01
 
 
+**John the Ripper** supporta diversi tipi di attacco per il cracking delle password:
 
-- erfds 
-- erfds
+### 1. Attacco a dizionario (Dictionary Attack)
+- Questo è il metodo più semplice e comune, dove John the Ripper utilizza un elenco predefinito di parole, noto come "dizionario", per tentare di indovinare la password. 
+- Questo attacco è efficace contro password deboli che si trovano facilmente in liste comuni.
+
+<br>
+
+### 2. Attacco di forza bruta (Brute-Force Attack)
+- In un attacco di forza bruta, John the Ripper prova tutte le possibili combinazioni di caratteri fino a trovare la password corretta. 
+- Questo metodo è molto efficace, ma può richiedere molto tempo, specialmente per password lunghe o complesse.
+
+---
+
+# Password Cracking
+
+Esercitazione 01
+
+### 3. Attacco ibrido (Hybrid Attack)
+- L'attacco ibrido combina l'attacco a dizionario con un attacco di forza bruta. 
+- In pratica, John the Ripper prende una parola dal dizionario e poi la modifica leggermente aggiungendo numeri, caratteri speciali o cambiando la capitalizzazione per cercare di indovinare la password.
+
+<br>
+
+### 4. Attacco Rainbow Table
+- Anche se John the Ripper non include nativamente le rainbow tables, può essere utilizzato in combinazione con esse. 
+- Le rainbow tables sono tabelle precompute di hash, che consentono di risolvere gli hash di password in tempi molto più rapidi rispetto a un attacco brute-force tradizionale.
+
+---
+
+# Password Cracking
+
+Esercitazione 01
+
+### 5. Attacco basato su regole (Rule-based Attack)
+- Questo metodo consente di applicare regole specifiche per modificare le parole del dizionario. 
+- Ad esempio, può aggiungere numeri alla fine, sostituire lettere con numeri simili (come "e" con "3"), o combinare più parole. 
+- È una forma avanzata di attacco ibrido.
+
+<br>
+
+### 6. Attacco incrementale (Incremental Mode)
+- Questa modalità è una forma avanzata di brute-force che inizia con tentativi più semplici e continua a incrementare la complessità della password fino a trovarla. 
+- Viene utilizzata per provare combinazioni che potrebbero non essere coperte da un dizionario standard.
 
 
 ---
@@ -790,9 +847,250 @@ Esercitazione 01
 
 Esercitazione 01
 
+### 7. Attacco a sezioni (Section Attack)
+- In questa modalità, John the Ripper divide l’attacco in sezioni, provando a crackare la password con una strategia specifica per ogni sezione. 
+- È utile per password che seguono schemi riconoscibili, come prefissi o suffissi fissi.
+
+<br>
+
+### 8. Attacco di derivazione delle chiavi (Key Derivation Function Attack)
+- John the Ripper supporta anche attacchi su password protette con funzioni di derivazione delle chiavi, come PBKDF2, bcrypt, scrypt, e altre. 
+- Le KDF sono progettate per essere "lente" dal punto di vista computazionale, cioè richiedono più tempo e risorse per generare un hash rispetto agli algoritmi di hashing tradizionali come MD5 o SHA-1. 
+- Questo rallentamento è intenzionale: rende il brute-force molto meno efficiente, perché ogni tentativo richiede molto più tempo rispetto a un algoritmo di hashing più veloce.
 
 
-- erfds 
-- erfds
+---
 
-s
+# Password Cracking
+
+Esercitazione 01
+
+- Vediamo come usare John The Ripper per effettuare un attacco a dizionario per scoprire la password di un file ZIP e di un file PDF.
+- Per semplificare l'esercitazione utilizziamo un container docker appositamente preparato dal docente
+- Segui tutte i passi in modo corretto in modo da scoprire le password
+
+<img src="/media/pwd_36.png" width="350" style="margin:auto;position:relative; left: 0px; top: 30px;">
+
+---
+
+# Password Cracking
+
+Esercitazione 01
+
+
+`Verifica della presenza di Docker`
+
+```bash
+$ docker run -ti --rm hello-world
+
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+c1ec31eb5944: Pull complete 
+Digest: sha256:1408fec50309afee38f3535383f5b09419e6dc0925bc69891e79d84cc4cdcec6
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+```
+
+---
+
+# Password Cracking
+
+Esercitazione 01
+
+`Installazione di John The Ripper`
+
+```bash
+$ docker pull profmancusoa/password-cracking:latest
+
+latest: Pulling from profmancusoa/password-cracking
+5de87e84afee: Pull complete 
+8464f1dfa665: Pull complete 
+Digest: sha256:5832b9c8943d49912a4ee45d1bc3b46c291a16ed901486244fe9dff481f36c7b
+Status: Downloaded newer image for profmancusoa/password-cracking:latest
+docker.io/profmancusoa/password-cracking:latest
+```
+
+<br>
+
+`Verifichiamo la presenza dell'immagine`
+
+```bash
+$ docker image ls
+
+REPOSITORY                       TAG           IMAGE ID       CREATED         SIZE
+profmancusoa/password-cracking   latest        6335b156d8e5   16 hours ago    368MB
+```
+
+---
+
+# Password Cracking
+
+Esercitazione 01
+
+`Lanciamo il container`
+
+```bash
+$ docker run -ti --rm profmancusoa/password-cracking
+
+root@bb76266f0c89:~# 
+```
+
+- Ok ora siamo dentro il container con John The Ripper
+
+`Vediamo cosa troviamo`
+
+```bash
+$ ls -la
+
+total 36
+drwx------ 1 root root 4096 Aug  8 18:10 .
+drwxr-xr-x 1 root root 4096 Aug  9 10:10 ..
+-rw-r--r-- 1 root root  789 Aug  8 18:07 .bashrc
+-rw-r--r-- 1 root root  161 Jul  9  2019 .profile
+-rw-r--r-- 1 root root 7470 Aug  8 18:10 secret.pdf
+-rw-r--r-- 1 root root  223 Aug  8 18:10 secret.zip
+```
+
+---
+
+# Password Cracking
+
+Esercitazione 01
+
+- Bene ci sono un file .zip ed un PDF con un nome intrigante
+- Siccome siamo curiosi proviamo a vedere cosa contengono questi due file
+
+`Unzip di secret.zip`
+
+```bash
+$ unzip secret.zip 
+
+Archive:  secret.zip
+[secret.zip] secret.txt password: 
+password incorrect--reenter: 
+password incorrect--reenter: 
+   skipping: secret.txt              incorrect password
+
+```
+
+<br>
+
+- Mannaggia lo zip è protetto da password e non possiamo "scompattarlo"
+
+---
+
+# Password Cracking
+
+Esercitazione 01
+
+- Vediamo se con il PDF siamo più fortunati
+- Apri un altra shell con `CTRL + SHIFT + T`
+
+`Copiamo il PDF sul nostro host`
+
+```bash
+$ docker cp lohacker:/root/secret.pdf .
+```
+
+<img src="/media/pwd_37.png" width="300" style="margin:auto;position:relative; left: 0px; top: 30px;">
+
+
+---
+
+# Password Cracking
+
+Esercitazione 01
+
+- Ok sia il file zip che PDF sono protetti da password. Che fare?
+- Proviamo allora a scoprire la password con John The Ripper
+- Come abbiamo visto per craccare la password abbiamo bisogno del suo hash, ma dove lo trovo?
+- Niente paura sono contenuti nei file stessi, basta solo estrarli
+
+`Estraiamo l'hash dello zip e salviamola in zip.hash`
+
+```bash
+$ zip2john secret.zip > zip.hash
+
+ver 1.0 efh 5455 efh 7875 secret.zip/secret.txt PKZIP Encr: 2b chk, TS_chk, cmplen=37, decmplen=25
+```
+
+<br>
+
+- Crea il file **zip.hash** che contiene l'hash della passowrd che protegge lo zip
+
+```bash
+$ cat zip.hash 
+secret.zip/secret.txt:$pkzip$1*2*2*0*25*19*f8be99cc*0*44*0*25*9143*3c8a2e24d545077434272fba02f6312b7e1ed2e880d0a1e7bbc7003545685549bd29f7201a*$/pkzip$:secret.txt:secret.zip::secret.zip
+```
+
+---
+
+# Password Cracking
+
+Esercitazione 01
+
+- Ok ora che abbiamo l'hash diamola in pasto a John The Ripper e vediamo se scopre qualcosa
+- Utilizziamo un attacco a dizionario (o wordlist nel gergo di JtR)
+
+```bash
+$ root@85b9ed463d36:~# /usr/sbin/john --wordlist=/usr/sbin/password.lst --progress-every=1 zip.hash 
+Using default input encoding: UTF-8
+Loaded 1 password hash (PKZIP [32/64])
+Will run 2 OpenMP threads
+Note: Passwords longer than 21 [worst case UTF-8] to 63 [ASCII] rejected
+Press 'q' or Ctrl-C to abort, 'h' for help, almost any other key for status
+pinky009         (secret.zip/secret.txt)     
+1g 0:00:00:00 DONE (2024-08-09 10:30) 3.125g/s 4736Kp/s 4736Kc/s 4736KC/s mrbubba..midnight2008
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed. 
+```
+<br>
+
+- Bam!!! 
+
+---
+
+# Password Cracking
+
+Esercitazione 01
+
+- JtR ha scoperto che la password è **pinky009**
+- Verifichiamolo
+
+```bash
+$ unzip -P pinky009 secret.zip 
+Archive:  secret.zip
+ extracting: secret.txt
+
+$ cat secret.txt 
+Se leggi se un hacker!!!
+```
+
+<br>
+
+- Molto bene siamno riusciti ad accedere al nostro file zip di cui ci eravamo dimenticati la password 
+
+---
+
+# Password Cracking
+
+Esercitazione 01
+
+- Bene ora lascio allo studente il crack della password del pdf
+- Per estrarre l'hash dal file PDF bisogna usare il programma `pdf2john.py`
+
+<br><br>
+
+### Cosa c'è scritto nel file PDF????
+
