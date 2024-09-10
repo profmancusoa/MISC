@@ -15,7 +15,7 @@ routerMode: "hash"
 download: true
 materia: MISC
 as: 2024/2025
-version: "1.1.0"
+version: "1.1.1"
 ---
 
 # ITT Informatica - prof. Mancuso
@@ -49,6 +49,22 @@ Camminiamo insieme
 <Banner padding=50px mt=50px>
 <span style="font-size:30px;">In tutte le mie lezioni e laboratori vige il regolamento d'istituto che ogni studente è tenuto a conoscere e rispettare!!!</span>
 </Banner>  
+
+---
+
+# Camminiamo insieme
+
+Obiettivi didattici trasversali del biennio
+
+- Gestione e rispetto degli ambienti scolastici:”Qui come a casa tua.”
+- Sapere gestire il proprio materiale
+- Sapersi orientare tra i materiali digitali e cartacei
+- Saper utilizzare la g-suite e windows
+- Saper comprendere un testo
+- Saper prendere appunti e fare uno schema, organizzare le informazioni date durante la lezione
+- Riuscire a rispettare le date di consegna
+- Saper e curare la comunicazione con i docenti (tempi e modi)
+- Comprendere i propri punti di forza e di debolezza in ciascuna materia
 
 ---
 
@@ -207,7 +223,7 @@ Patente vs Pilota F1
 
 # Camminiamo insieme
 
-Informatico vs Diploma in Informatica
+ Diploma in Informatica vs Informatico
 
 <img src="/media/regole17.png" width="450" style="margin: auto;position:relative;left:-250px;top:50px;">
 
@@ -268,7 +284,7 @@ Lambs Of Fame (https://lambsoffame.mancusoa.it)
 
 - Dall'anno scolastico 2024 introduco un processo di &nbsp; `gamification` con l'obiettivo di motivare tutti gli studenti a dare il meglio di se
 - L'obiettivo è ampliare le opportunità di valutazione nel corso dell'anno 
-- Quindi come in ogni gioco che si rispetti, ci sarà una **Leaderboard** suddivisa per materia ed una complessiva
+- Quindi come in ogni gioco che si rispetti, ci sarà una **Leaderboard** suddivisa per materia, per anno  ed una complessiva
 
 </div>
 <div>
@@ -293,7 +309,7 @@ Lambs Of Fame
 - Lo studente ha l'opportunità di acquisire punti in diversi ambiti sfruttando le sue capacità e competenze
 - A fine quadrimestre viene assegnato un voto che fa media (rimpiazza una verifica)
 - Il voto viene calcolato come discostamento percentuale dal valore medio
-- Quindi gli studenti che totalizzano un pujnteggio complessivo (per materia) pari alla media ricevono un 6
+- Quindi gli studenti che totalizzano un punteggio complessivo (per materia) pari alla media ricevono un 6
 - Gli studenti che totalizzano un voto che è il 35% superiore alla media ricevono un 8
 - Gli studenti che totalizzano un punteggio che è il 35% inferiore alla media ricevono un 4
 
@@ -350,10 +366,27 @@ Divertiamoci insieme
 
 ---
 
+# Classroom
+
+&nbsp;
+
+
+- Per ogni classe e corso è presente una classroom
+
+<img src="/media/regole20.png" width="650" style="margin: auto;">
+
+
+---
+
 # Buon percorso insieme
 
 <br><br>
 
-<div style="background:green; color: yellow; padding: 2rem; font-size: 3rem; line-height: 4rem;">
-Vi auguro un sereno percorso triennale.Buon Lavoro a tutti!!!
-</div>
+<!-- <div style="background:green; color: yellow; padding: 2rem; font-size: 2.7rem; line-height: 4rem;"> -->
+<Banner padding=40px>
+<span style="font-size:2.7rem;">Vi auguro un sereno percorso triennale.</span><br><br><br>
+<center>
+<span style="font-size:5.2rem;">Buon Lavoro a tutti!!!</span>
+</center>
+</Banner>
+<!-- </div> -->
