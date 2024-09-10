@@ -15,7 +15,7 @@ routerMode: "hash"
 download: true
 materia: MISC
 as: 2024/2025
-version: "1.1.1"
+version: "1.1.2"
 ---
 
 # ITT Informatica - prof. Mancuso
@@ -41,6 +41,82 @@ Camminiamo insieme
 
 
 <img src="/media/regole11.png" style="margin: auto; margin-top:-40px" width=450>
+
+---
+
+# Chi Sono
+
+&nbsp;
+
+- Un'<span style="font-size: 3rem;">appassionato</span> di computer e tecnologie dell'informazione dal 1982
+- Inizio con il VIC20 e il re dei computer, sua maestà il C64 
+- Il registratore a cassette e TANTA pazienza
+- Risoluzione 320x200 pixel
+- No Internet (non esisteva)
+
+<img src="/media/regole21.jpg" style="position:relative; left:650px;top: 50px;" width=250>
+<img src="/media/regole22.jpg" style="position:relative; left:320px;top:-137px;" width=250>
+<img src="/media/regole23.jpg" style="position:relative; left:10px; top:-300px;" width=250>
+
+---
+
+# Chi Sono
+
+&nbsp;
+
+- Sono un appassionato di computer
+- Ho frequentato l'ITI indirizzo Informatica
+- Ho frequentato il Politecnico 
+- Sono Ingegnere Informatico
+
+
+<img src="/media/regole24.jpg" style="position:relative; left:650px;top: -150px;" width=250>
+<img src="/media/regole25.jpg" style="position:relative; left:320px;top:-137px;" width=350>
+<img src="/media/regole26.jpg" style="position:relative; left:10px; top:-330px;" width=250>
+
+
+---
+
+# Chi Sono
+
+&nbsp;
+
+<img src="/media/regole27.png" style="position:relative; left:0px; top: 0px;" width=350>
+<img src="/media/regole28.png" style="position:relative; left:400px; top: -400px;" width=450>
+
+---
+
+# Chi Sono
+
+&nbsp;
+
+<center>
+<iframe width="640" height="360" src="https://video.wixstatic.com/video/3e5fd2_f2d3a9901e4a41e69897bd79067384dd/480p/mp4/file.mp4" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</center>
+
+---
+
+# Chi Sono
+
+&nbsp;
+
+<center>
+<iframe width="360" height="640" style="position:relative; top:-100px;" src="https://video.wixstatic.com/video/3e5fd2_96699ef5ee0a4727a50fb3cda872ab51/480p/mp4/file.mp4" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</center>
+
+
+---
+
+# Chi Sono
+
+&nbsp;
+
+
+<center>
+<iframe width="640" height="360" src="https://video.wixstatic.com/video/3e5fd2_16f89be595e147d587f5fd77c9ea9e22/480p/mp4/file.mp4" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</center>
+
+
 
 ---
 
