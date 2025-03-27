@@ -16,6 +16,17 @@ Il vincitore andrà in produzione ed il suo sito sarà inviato all'intero agnell
 
 ---
 
+# Obiettivi
+
+L'obiettivo è sensibilizzare l'agnelli sull'uso delle password.
+
+- Phishing (come faremo noi)
+- Non riusare le stesse password
+- Non inserirle in siti a caso
+- ...
+
+---
+
 # Requisiti
 
 Il sito, per essere ammesso al contest, deve rispecchiare i seguenti requisiti:
@@ -23,9 +34,7 @@ Il sito, per essere ammesso al contest, deve rispecchiare i seguenti requisiti:
 - **Controllo**: deve controllare quanto una password sia sicura (_es. calcolandone l'entropia, controllando word list, ..._).
 - **Statistiche**: deve raccoglie statitistiche generali sull'uso del sito.
 
----
-
-# Opzionali
+## Opzionali
 
 Ecco alcuni fattori opzionali che potrebbero aiutarti a vincere
 
